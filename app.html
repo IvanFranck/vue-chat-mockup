@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/index.css">
+    <title>Vue-chat</title>
+</head>
+
+<body>
+
+    <div class="content">
+
+
+        <!-- lef -->
+
+        <aside class="left">
+
+
+            <div class="user">
+                <div class="user_container">
+                    <div class="user_avatar">IF</div>
+                    <div class="user_infos">
+                        <h3 class="user_name ">Ivan Franck</h3>
+                        <div class="user_id">
+                            <span class="text-normal text-gray">tdGSDX56gfs3Kys50jssdsdsds</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16 12.9V17.1C16 20.6 14.6 22 11.1 22H6.9C3.4 22 2 20.6 2 17.1V12.9C2 9.4 3.4 8 6.9 8H11.1C14.6 8 16 9.4 16 12.9Z"
+                                    stroke="#6D6A6A" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M22 6.9V11.1C22 14.6 20.6 16 17.1 16H16V12.9C16 9.4 14.6 8 11.1 8H8V6.9C8 3.4 9.4 2 12.9 2H17.1C20.6 2 22 3.4 22 6.9Z"
+                                    stroke="#6D6A6A" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- contact container -->
+            <div class="contact ">
+                <div class="contact-container">
+                    <div class="search">
+                        <input type="text" placeholder="search a conversation">
+                    </div>
+                    <div class="contact-list">
+
+                        <!-- new conversation -->
+                        <div class="new-conversation">
+                            <span class="new-conversation__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17.98 10.79V14.79C17.98 15.05 17.97 15.3 17.94 15.54C17.71 18.24 16.12 19.58 13.19 19.58H12.79C12.54 19.58 12.3 19.7 12.15 19.9L10.95 21.5C10.42 22.21 9.56 22.21 9.03 21.5L7.82999 19.9C7.69999 19.73 7.41 19.58 7.19 19.58H6.79001C3.60001 19.58 2 18.79 2 14.79V10.79C2 7.86001 3.35001 6.27001 6.04001 6.04001C6.28001 6.01001 6.53001 6 6.79001 6H13.19C16.38 6 17.98 7.60001 17.98 10.79Z"
+                                        stroke="#034AA3" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M21.98 6.79001V10.79C21.98 13.73 20.63 15.31 17.94 15.54C17.97 15.3 17.98 15.05 17.98 14.79V10.79C17.98 7.60001 16.38 6 13.19 6H6.79004C6.53004 6 6.28004 6.01001 6.04004 6.04001C6.27004 3.35001 7.86004 2 10.79 2H17.19C20.38 2 21.98 3.60001 21.98 6.79001Z"
+                                        stroke="#034AA3" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M13.4955 13.25H13.5045" stroke="#034AA3" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M9.9955 13.25H10.0045" stroke="#034AA3" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M6.4955 13.25H6.5045" stroke="#034AA3" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                            <p class="copy-2">Start new conversation</p>
+                        </div>
+
+
+                        <div class="conversation-container  mt-l">
+
+
+                            <!-- conversation -->
+                            <div class="conversation">
+                                <div class="conversation-main">
+                                    <span class="conversation-avatar">
+                                        C
+                                    </span>
+                                    <div>
+                                        <h5 class="copy-3 mb-xs">Carlos</h5>
+                                        <p class="copy-2 text-gray text-normal">Pariatur quis culpa id aliquip
+                                            eiusmod
+                                            dolor.</p>
+                                    </div>
+                                </div>
+                                <span class="text-gray font-mono note">11/06/22</span>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </aside>
+        <main>
+
+            <div class="header">
+
+                <div class="header_container">
+                    <div class="logo-text__sm logo">Vue chat</div>
+                    <div class="logout">
+                        <span class="px-sm">logout</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.90002 7.55999C9.21002 3.95999 11.06 2.48999 15.11 2.48999H15.24C19.71 2.48999 21.5 4.27999 21.5 8.74999V15.27C21.5 19.74 19.71 21.53 15.24 21.53H15.11C11.09 21.53 9.24002 20.08 8.91002 16.54"
+                                stroke="#C20114" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M15 12H3.62" stroke="#C20114" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M5.85 8.65002L2.5 12L5.85 15.35" stroke="#C20114" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- workspace -->
+            <div class="message-space">
+                <div class="message-feed">
+
+
+
+                    <!-- message -->
+                    <div class="message-container">
+                        <div class="message">
+                            <div class="message-body  text-normal">
+                                Veniam enim laboris est mollit labore quis amet ad proident ut. Cillum enim non id sunt.
+                                Sint Lorem ex laborum mollit incididunt reprehenderit aliqua ullamco in non magna
+                                cupidatat
+                                mollit quis.
+                            </div>
+                            <span class="message-time mt-l note">Sunday,20,November 09:12</span>
+                        </div>
+                    </div>
+
+
+                    <!-- message -->
+                    <div class="message-container">
+                        <div class="message">
+                            <div class="message-body  text-normal">
+                                Aliquip reprehenderit deserunt fugiat ex duis duis ex anim sint ad voluptate labore.
+                            </div>
+                            <span class="message-time mt-l note">Sunday,20,November 12:45</span>
+                        </div>
+                    </div>
+
+
+                    <!-- message -->
+                    <div class="message-container message-container-primary">
+                        <div class="message message-primary">
+                            <div class="message-body  text-normal">
+                                Aliqua qui consectetur officia eiusmod tempor magna voluptate amet magna aliqua.
+                            </div>
+                            <span class="message-time mt-l note">Mon,21,November 18:52</span>
+                        </div>
+                    </div>
+
+
+
+
+                    <!-- message -->
+                    <div class="message-container message-container-primary">
+                        <div class="message message-primary">
+                            <div class="message-body  text-normal">
+                                Laboris laboris ut non deserunt veniam irure eiusmod enim laborum ea dolore officia.
+                            </div>
+                            <span class="message-time mt-l note">Mon,21,November 18:52</span>
+                        </div>
+                    </div>
+
+                    <!-- message -->
+                    <div class="message-container">
+                        <div class="message">
+                            <div class="message-body  text-normal">
+                                Ex ex esse irure et nulla laborum elit sunt duis cupidatat. Et mollit amet laborum eu
+                                eiusmod aliqua commodo ex eiusmod veniam sunt. Excepteur Lorem laborum sit eu ex.
+                                Nostrud mollit fugiat incididunt elit sint sunt enim officia exercitation laboris. Ex
+                                anim nulla deserunt quis consectetur veniam est magna laborum nostrud. Lorem amet minim
+                                sit enim occaecat amet.
+                            </div>
+                            <span class="message-time mt-l note">Tue,22,November 12:45</span>
+                        </div>
+                    </div>
+
+
+                    <!-- message -->
+                    <div class="message-container">
+                        <div class="message">
+                            <div class="message-body  text-normal">
+                                Ex ex esse irure et nulla laborum elit sunt duis cupidatat. Et mollit amet laborum eu
+                                eiusmod aliqua commodo ex eiusmod veniam sunt. Excepteur Lorem laborum sit eu ex.
+                                Nostrud mollit fugiat incididunt elit sint sunt enim officia exercitation laboris. Ex
+                                anim nulla deserunt quis consectetur veniam est magna laborum nostrud. Lorem amet minim
+                                sit enim occaecat amet.
+                            </div>
+                            <span class="message-time mt-l note">Tue,22,November 12:45</span>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- msg input -->
+                <div class="message-input_container">
+                    <form action="" class="message-input">
+                        <input type="text" placeholder="Your Message">
+                        <button type="submit">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.51002 4.23001L18.07 8.51001C21.91 10.43 21.91 13.57 18.07 15.49L9.51002 19.77C3.75002 22.65 1.40002 20.29 4.28002 14.54L5.15002 12.81C5.37002 12.37 5.37002 11.64 5.15002 11.2L4.28002 9.46001C1.40002 3.71001 3.76002 1.35001 9.51002 4.23001Z"
+                                    stroke="#ffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M5.44 12H10.84" stroke="#ffff" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
